@@ -191,11 +191,20 @@
 //         : null
 // }
 
+// let numero = prompt("Dime un número del 1 al 10");
 
-let numero = prompt("Dime un número del 1 al 10");
+// for(let i = 0; i < 10; i++){
 
-for(let i = 0; i < 10; i++){
+//     console.log(`${numero} X ${i + 1} = ${numero * (i + 1)}`)
 
-    console.log(`${numero} X ${i + 1} = ${numero * (i + 1)}`)
+// }
 
-}
+// let radio=prompt("Escribe el radio de un circulo:")
+// area=parseInt((radio**2)*Math.PI)
+// console.log("EL area del ciculo es "+area)
+let numero;
+do {
+  numero = parseInt(prompt("Dime un número"));
+} while (isNaN(numero));
+
+console.log(numero);
